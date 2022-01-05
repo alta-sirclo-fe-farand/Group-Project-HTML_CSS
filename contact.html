@@ -27,9 +27,16 @@
             text-align: center;
         }
 
+        .title-line {
+            background-color: rgb(244, 117, 34);
+            width: 30px;
+            height: 3px;
+        }
+
         .btn-primary {
             padding: 10px 30px;
             border-radius: 24px;
+            border: 1px solid rgb(244, 117, 34);
             background-color: rgb(244, 117, 34);
         }
 
@@ -42,17 +49,40 @@
             font-family: Arial, Helvetica, sans-serif;
             color: rgb(255, 255, 255);
         }
+
+        .mandatory {
+            color: red;
+        }
+
+        .btn-primary:hover {
+            background-color: white;
+            color: rgb(244, 117, 34);
+            border: 1px solid rgb(244, 117, 34);
+            text-decoration: none;
+        }
+
+        .btn-primary .hover {
+            display: none;
+        }
+
+        .btn-primary:hover .hover {
+            display: inline;
+        }
+
+        .btn-primary:hover .unhover {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-3">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
                 <img src="assets/logo-ALTA@2x.png" width="100px" height="50px" alt="logoAlterra">
             </div>
-            <div class="col-2"></div>
-            <div class="col-6">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-6">
                 <a href="home.html" class="blue-fonts">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="home.html" class="blue-fonts">About</a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="team.html" class="blue-fonts">Team</a> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -62,42 +92,54 @@
         </div>
     </div>
 
-    <div class="row justify-content-center">
-        <div class="col-12">
-            <h3 class="blue-fonts"><strong>---- Get In Touch ----</strong></h3>
+    <div class="row justify-content-center align-items-center">
+        <div class="title-line"></div>
+        <div>
+            <h3 class="blue-fonts">
+                <strong>&nbsp;Get In Touch&nbsp;</strong>
+            </h3>
         </div>
+        <div class="title-line"></div>
     </div>
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-4 blue-fonts">
-                Phone <br> +62 21 909 7890 <br>
-                Email <br> info@alterra.id <br>
-                Website <br> https://www.alterra.id/ <br>
-                Social Profiles <br> Logos
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4 blue-fonts">
+                Phone <br> <img src="assets/phone.png" width = "13px" height="auto" /> +62 21 909 7890 <br><br>
+                Email <br> <img src="assets/envelope.png" width = "13px" height="auto" /> info@alterra.id <br><br>
+                Website <br> <img src="assets/browser.png" width = "13px" height="auto" /> https://www.alterra.id/ <br><br>
+                Social Profiles <br>
+                <img src="assets/facebook.png" width = "17px" height="auto" />
+                <img src="assets/twitter.png" width = "17px" height="auto" />
+                <img src="assets/instagram.png" width = "17px" height="auto" />
+                <img src="assets/linkedin.png" width = "17px" height="auto" />
             </div>
-            <div class="col-6 blue-fonts">
+            <div class="col-sm-6 blue-fonts">
                 If you have any suggestion, project, or even want to say hello, please
                 fill out the form below and I will reply you shortly. <br><br>
                 <form>
                     <div class="form-group">
-                        <label for="fullname">Full Name *</label>
+                        <label for="fullname">Full Name <span class="mandatory">*</span></label>
                         <input type="text" class="form-control" id="fullname" placeholder="Winda Pramesti">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email Address *</label>
+                        <label for="email">Email Address <span class="mandatory">*</span></label>
                         <input type="email" class="form-control" id="email" placeholder="Your Email">
                     </div>
                     <div class="form-group">
-                        <label for="phone">Phone Number *</label>
+                        <label for="phone">Phone Number <span class="mandatory">*</span></label>
                         <input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
                     </div>
                     <div class="form-group">
-                        <label for="message">Message *</label>
+                        <label for="message">Message <span class="mandatory">*</span></label>
                         <textarea class="form-control" id="message" placeholder="Your Message ..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn-primary">
+                        <img src="assets/send-mail-hover.png" width="15px" class="hover">
+                        <img src="assets/send-mail.png" width="15px" class="unhover">
+                        Send Message
+                    </button>
                   </form>
             </div>
             <div class="col-1"></div>
@@ -106,20 +148,20 @@
 
     <div class="container-fluid white-fonts">
         <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
                 <img src="assets/logo-ALTA-v2@2x.png" width="100px" height="50px" alt="logoAlterra">
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
                 Social Media <br>
                 <img src="assets/ic_fb.png" width="15px" height="15px" alt="fb" /> &nbsp;
                 <img src="assets/ic_twitter.png" width="15px" height="15px" alt="twitter" /> &nbsp;
                 <img src="assets/ic_ig.png" width="15px" height="15px" alt="ig" /> &nbsp;
                 <img src="assets/ic_linkedin.png" width="15px" height="15px" alt="linkedin" />
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
                 Copyright © 2019 Alterra
             </div>
         </div>
