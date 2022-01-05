@@ -71,26 +71,65 @@
             border-bottom: 1px dotted grey;
         }
 
-        /* .photo {
+        .photo {
             background-image: url(assets/shutterstock_796346011@2x.png);
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            width: 250px;
+            height: 300px;
             background-size: cover;
-        } */
+        }
+
+        .orange-border {
+            border : 10px solid rgb(244, 117, 34);
+            width: 250px;
+            height: 300px;
+            position: absolute;
+            top: 10%;
+            left: -13%;
+        }
+
+        .blue-border {
+            border : 10px solid rgb(25, 52, 94);
+            width: 250px;
+            height: 300px;
+            position: absolute;
+            top: 10%;
+            left: -13%;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-3">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
                 <img src="assets/logo-ALTA@2x.png" width="100px" height="50px" alt="logoAlterra">
             </div>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-6">
+            <div class="col-md-2"></div>
+            <div class="col-sm-12 col-md-6">
                 <a href="home.html" class="blue-fonts">Home</a> &nbsp;&nbsp;&nbsp;
                 <a href="home.html" class="blue-fonts">About</a> &nbsp;&nbsp;&nbsp;
                 <a href="team.html" class="orange-fonts">Team</a> &nbsp;&nbsp;&nbsp;
                 <a href="blog.html" class="blue-fonts">Blog</a> &nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="btn-primary" href="contact.html" class="white-fonts">Contact</a>
+                <a href="contact.html" class="btn-primary white-fonts">Contact</a>
             </div>
         </div>
     </div>
@@ -119,12 +158,14 @@
             <div class="row">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-5">
-                    <img src="assets/shutterstock_796346011@2x.png" alt="photo" width="250px" height="auto" />
+                    <div class="photo">
+                        <div class="orange-border"></div>
+                    </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="row">
                         <div class="col-6 blue-fonts">
-                            <br>
+                            <br><br>
                             <p>First Name</p>
                             <p>Last Name</p>
                             <p>Birthdate</p>
@@ -134,7 +175,7 @@
                             <p>Phone</p>
                         </div>
                         <div class="col-6 blue-fonts">
-                            <br>
+                            <br><br>
                             <p>: Cindy</p>
                             <p>: Felita</p>
                             <p>: 30 Juni 1995</p>
@@ -212,12 +253,14 @@
             <div class="row">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-5">
-                    <img src="assets/shutterstock_796346011@2x.png" alt="photo" width="250px" height="auto" />
+                    <div class="photo">
+                        <div class="blue-border"></div>
+                    </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="row">
                         <div class="col-6 blue-fonts">
-                            <br>
+                            <br><br>
                             <p>First Name</p>
                             <p>Last Name</p>
                             <p>Birthdate</p>
@@ -227,7 +270,7 @@
                             <p>Phone</p>
                         </div>
                         <div class="col-6 blue-fonts">
-                            <br>
+                            <br><br>
                             <p>: Winda</p>
                             <p>: Pramesti</p>
                             <p>: 30 Juni 1995</p>
@@ -305,12 +348,14 @@
             <div class="row">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-5">
-                    <img src="assets/shutterstock_796346011@2x.png" alt="photo" width="250px" height="auto" />
+                    <div class="photo">
+                        <div class="orange-border"></div>
+                    </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="row">
                         <div class="col-6 blue-fonts">
-                            <br>
+                            <br><br>
                             <p>First Name</p>
                             <p>Last Name</p>
                             <p>Birthdate</p>
@@ -320,7 +365,7 @@
                             <p>Phone</p>
                         </div>
                         <div class="col-6 blue-fonts">
-                            <br>
+                            <br><br>
                             <p>: Aulia</p>
                             <p>: Rahmani</p>
                             <p>: 30 Juni 1995</p>
