@@ -53,32 +53,108 @@
             height: 15vh;
         }
         #blog{padding-top: 15vh;}
+        .header {
+        background-color: white;
+        z-index: 2;
+        height: 15vh;
+    }
+        .btn-primary:hover {
+            background-color: white;
+            color: rgb(244, 117, 34);
+            border: 1px solid rgb(244, 117, 34);
+            text-decoration: none;
+        }
+
+        .btn-primary .hover {
+            display: none;
+        }
+
+        .btn-primary:hover .hover {
+            display: inline;
+        }
+
+        .btn-primary:hover .unhover {
+            display: none;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+
+        footer{
+            margin-top:auto; 
+        }
+        .container-fluid {
+            padding: 1rem;
+        }
+        .container-fluid:last-child {
+            background-color: rgb(25, 52, 94);
+        }
+
+        .justify-content-center {
+            text-align: center;
+        }
+
+        .title-line {
+            background-color: rgb(244, 117, 34);
+            width: 30px;
+            height: 3px;
+        }
+
+        .btn-primary {
+            padding: 10px 30px;
+            border-radius: 24px;
+            background-color: rgb(244, 117, 34);
+        }
+
+        .blue-fonts {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(25, 52, 94);
+        }
+
+        .white-fonts {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+        }
+
+        .mandatory {
+            color: red;
+        }
+
     </style>
 </head>
-
 <body>
-    <!--Header-->
-    <div class="container-fluid py-3 position-fixed header">
+    <div class="container-fluid position-fixed header">
         <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-3">
+            <div class="col-md-1"></div>
+            <div class="col-md-3 justify-content-center">
                 <img src="assets/logo-ALTA@2x.png" width="100px" height="50px" alt="logoAlterra">
             </div>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-6">
-                <div class="row justify-content-center">
-                <a href="home.html" class="blue px-2">Home</a>
-                <a href="home.html" class="blue px-2">About</a>
-                <a href="team.html" class="blue px-2">Team</a> 
-                <a href="blog.html" class="blue px-2">Blog</a> 
-                <a class="btn-primary" href="contact.html" class="white">Contact</a>
-                </div>
+            <div class="col-md-2"></div>
+            <div class="col-sm-12 col-md-6 justify-content-center">
+                <a href="home.html" class="blue-fonts">Home</a> &nbsp;&nbsp;&nbsp;
+                <a href="home.html" class="blue-fonts">About</a> &nbsp;&nbsp;&nbsp;
+                <a href="team.html" class="blue-fonts">Team</a> &nbsp;&nbsp;&nbsp;
+                <a href="blog.html" class="blue-fonts">Blog</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="contact.html" class="btn-primary white-fonts">Contact</a>
             </div>
         </div>
     </div>
-    <!--Blog-->
-    <div id="blog">
-    <div class="title row justify-content-center align-items-center">
+<!--Blog-->
+<div id="blog" class="mb-5">
+    <div class="title row justify-content-center align-items-center w-100">
         <div class="line"></div>
         <div class="blue col-auto font-weight-bold my-5">
             <h2>Blog</h2>
@@ -126,28 +202,26 @@
         </div>
     </div>
     </div>
-    <!--Footer-->
-    <footer class="row pt-3" style="background-color: rgb(6,57,112);">
-        <div class="logo col-md-4 d-flex justify-content-center align-items-center">
-            <img src="ASSETS/logo-ALTA-v2@2x.png" style="height:auto; width:25%">
-        </div>
-        <div class="socmed col-md-4 d-flex flex-column justify-content-center align-items-center my-3">
-            <p style="color: white" class="mb-1">Social Media</p>
-            <div class="icon row justify-content-center align-items-center" style="width:50%">
-                <a href="." class="col-3 w-100 h-100 p-0 d-flex justify-content-center"><img src="ASSETS/ic_fb.png"
-                        class="w-50"></a>
-                <a href="." class="col-3 w-100 h-100 p-0 d-flex justify-content-center"><img src="ASSETS/ic_twitter.png"
-                        class="w-50"></a>
-                <a href="." class="col-3 w-100 h-100 p-0 d-flex justify-content-center"><img src="ASSETS/ic_ig.png"
-                        class="w-50"></a>
-                <a href="." class="col-3 w-100 h-100 p-0 d-flex justify-content-center"><img
-                        src="ASSETS/ic_linkedin.png" class="w-50"></a>
+   
+    <footer class="container-fluid white-fonts">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 justify-content-center">
+                <img src="assets/logo-ALTA-v2@2x.png" width="100px" height="50px" alt="logoAlterra">
             </div>
-        </div>
-        <div class="copy col-md-4 d-flex align-items-center justify-content-center border-left my-2">
-            <p style="color: white">copyright &copy 2019 Alterra</p>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 justify-content-center">
+                Social Media <br>
+                <img src="assets/ic_fb.png" width="15px" height="15px" alt="fb" /> &nbsp;
+                <img src="assets/ic_twitter.png" width="15px" height="15px" alt="twitter" /> &nbsp;
+                <img src="assets/ic_ig.png" width="15px" height="15px" alt="ig" /> &nbsp;
+                <img src="assets/ic_linkedin.png" width="15px" height="15px" alt="linkedin" />
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 justify-content-center">
+                Copyright © 2019 Alterra
+            </div>
         </div>
     </footer>
 </body>
-
 </html>
